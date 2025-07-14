@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.main-div{
+   /* width : 1300px; */
+   /* background-image : conic-gradient(orange,red,green,blue,yellow,indigo,violet); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  border : 1px solid transparent;
+  border-radius : 10px;
+  width : 15vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+select{
+   border : 1px solid transparent;
+  border-radius : 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.s-li{
+  list-style-type: none;
+  border-width : 2px;
+  border-style: solid;
+  border-radius : 10px;
+  animation-name: demo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.App-link {
-  color: #61dafb;
+.d-li{
+  list-style-type: none;
+  border-width : 2px;
+  border-style: solid;
+  border-radius : 10px;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes App-logo-spin {
+@keyframes demo {
   from {
-    transform: rotate(0deg);
+    border-color : green;
+    color : lightcyan;
   }
   to {
-    transform: rotate(360deg);
+    border-color : bisque;
+    color : whitesmoke;
+  }
+}
+
+@keyframes example {
+  from {
+    border-color : red;
+    color : lightcyan;
+  }
+  to {
+    border-color : bisque ;
+    color : whitesmoke;
   }
 }
